@@ -271,7 +271,7 @@ export default class Presentation extends React.Component {
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
               From scratch ?
             </Heading>
-            <Image width="70%" src={images.southPark}/>
+            <Image width="70%" src={images.southPark.replace("/", "")}/>
           </Slide>
           <Slide align="center flex-start">
             <Heading caps textColor="black" style={{ marginBottom: "30px"}}>
@@ -318,7 +318,7 @@ export default class Presentation extends React.Component {
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
               From scratch ?
             </Heading>
-            <Image width="90%" src={images.fromScratch}/>
+            <Image width="90%" src={images.fromScratch.replace("/", "")}/>
           </Slide>
           <Slide bgColor="tertiary" align="center flex-start">
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
