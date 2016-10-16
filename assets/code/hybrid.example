@@ -1,0 +1,13 @@
+use Sonata\AdminBundle\Admin\Admin;
+
+class MyEntityAdmin extends Admin
+{
+    public function getTemplate($name)
+    {
+        if ($name === 'show') {
+            return 'MyBundle:MyEntity:show.html.twig';
+        }
+
+        return parent::getTemplate($name);
+    }
+}

@@ -1,0 +1,15 @@
+use Sonata\AdminBundle\Admin\Admin;
+use Sonata\AdminBundle\Route\RouteCollection;
+
+class MyEntityAdmin extends Admin
+{
+    protected function configureRoutes(RouteCollection $collection)
+    {
+        $collection->clearExcept(['delete', 'edit', 'view']);
+
+        // New entities can be created only when the form is embedded
+        if ($this->hasParentFieldDescription()) {
+            $collection->add('create');
+        }
+    }
+}

@@ -1,0 +1,18 @@
+// src/MyBundle/Controller/VotableEntityAdminController
+
+use Sonata\AdminBundle\Controller\CRUDController as Controller;
+use Symfony\Component\HttpFoundation\Response;
+
+class VotableEntityAdminController extends Controller
+{
+    public function exportVotesAction()
+    {
+        $votableEntity = $this->admin->getSubject();
+        $content = $this->get('my_votes_exporter')->getVotesData();
+
+        return new Response($content, 200, [
+            'Content-Type' => 'application/force-download',
+            'Content-Disposition' => 'attachment; filename="votes.csv"',
+        ]);
+    }
+}
