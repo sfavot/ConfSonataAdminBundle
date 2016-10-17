@@ -100,7 +100,7 @@ export default class Presentation extends React.Component {
               <ListItem>Gère les relations complexes entres objects</ListItem>
               <ListItem>Gère les rôles / droits / ACLs</ListItem>
               <ListItem>Dashboard + CRUD pour chaque entité</ListItem>
-              <ListItem>Et en plus c'est joli !</ListItem>
+              <ListItem>Et en plus c'est joli™ !</ListItem>
             </List>
             <Image width="100%" src={images.magic.replace('/', '')}/>
           </Slide>
@@ -181,7 +181,7 @@ export default class Presentation extends React.Component {
               C'est FAT !
             </Heading>
             <List>
-              <ListItem>Sonata Admin, ça gère tout...</ListItem>
+              <ListItem>Sonata Admin, ça gère <strong>tout</strong>...</ListItem>
               <ListItem>5 bundles juste pour l'administration</ListItem>
               <ListItem>+ un core bundle, un bundle pour les médias, un pour les users...</ListItem>
               <ListItem>Des dépendances à n'en plus finir</ListItem>
@@ -351,6 +351,19 @@ export default class Presentation extends React.Component {
               <ListItem>Du niveau de personnalisation souhaité</ListItem>
               <ListItem>...</ListItem>
             </List>
+          </Slide>
+          <Slide bgColor="white" textColor="black">
+            <Heading size={1} caps fit textColor="primary">
+              Contribuez !
+            </Heading>
+            <List>
+              <ListItem>Reportez les bugs</ListItem>
+              <ListItem>Écrivez de la doc</ListItem>
+              <ListItem>Faites des PRs</ListItem>
+            </List>
+            <Heading size={4} caps fit textColor="primary">
+              Bref, faites vivre le projet !
+            </Heading>
           </Slide>
           <Slide bgColor="white">
             <Heading caps textColor="black">

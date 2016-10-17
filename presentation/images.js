@@ -11,7 +11,7 @@ const images = {
   doc2: require("../assets/slack/doc/doc-2.png"),
   doc3: require("../assets/slack/doc/doc-3.png"),
   southPark: require("../assets/south-park.gif"),
-  fromScratch: require("../assets/slack/from-scratch-1.png"),
+  fromScratch: require("../assets/slack/from-scratch.png"),
   skeleton: require("../assets/pr-skeleton.jpg"),
   rage1: require("../assets/slack/rage/rage-1.png"),
   rage2: require("../assets/slack/rage/rage-2.png"),
