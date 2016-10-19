@@ -34,9 +34,14 @@ import images from './images';
 
 preloader(images);
 
+const joliColor = "#F7D325";
+const retroFriendlyColor = "#0BCCA3";
+
+const mainColor = joliColor;
+
 const theme = createTheme({
-  primary: "#0BCCA3",
-  quartenary: "#0BCCA3"
+  primary: mainColor,
+  quartenary: mainColor
 });
 theme.screen.components.list.listStyleType = 'square';
 theme.screen.components.listItem.fontSize = '1.3em';
@@ -68,7 +73,7 @@ export default class Presentation extends React.Component {
                   <ListItem>Développeur chez <Link textColor="primary" href="http://jolicode.com">JoliCode</Link></ListItem>
                   <ListItem>Principalement Symfony et React</ListItem>
                   <ListItem>Toute première conférence 😨</ListItem>
-                  <ListItem><span style={{ fontWeight: "bold", color: "#0BCCA3" }}>Sonata Master</span> à JoliCode</ListItem>
+                  <ListItem><span style={{ fontWeight: "bold", color: mainColor }}>Sonata Master</span> à JoliCode</ListItem>
                 </List>
               </Fill>
             </Layout>
@@ -97,7 +102,7 @@ export default class Presentation extends React.Component {
             <List>
               <ListItem>Rapide à mettre en place</ListItem>
               <ListItem>S'adapte à tous les ORMs / BDDs</ListItem>
-              <ListItem>Gère les relations complexes entres objects</ListItem>
+              <ListItem>Gère les relations complexes entre objets</ListItem>
               <ListItem>Gère les rôles / droits / ACLs</ListItem>
               <ListItem>Dashboard + CRUD pour chaque entité</ListItem>
               <ListItem>Et en plus c'est joli™ !</ListItem>
