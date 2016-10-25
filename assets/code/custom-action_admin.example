@@ -1,5 +1,4 @@
 // src/MyBundle/Admin/VotableEntityAdmin
-
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Route\RouteCollection;

@@ -1,3 +1,7 @@
 {# src/MyBundle/Resources/views/CRUD/list__action_export_votes.html.twig #}
-
-<a class="btn btn-sm" href="{{ admin.generateObjectUrl('export_votes', object) }}">Exporter les votes</a>
+<a
+  class="btn btn-sm"
+  href="{{ admin.generateObjectUrl('export_votes', object) }}"
+>
+  Exporter les votes
+</a>

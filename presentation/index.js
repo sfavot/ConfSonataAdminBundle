@@ -95,6 +95,56 @@ export default class Presentation extends React.Component {
               <ListItem>Utilisé par <strong>tout le monde</strong></ListItem>
             </List>
           </Slide>
+          <Slide bgColor="primary" textColor="black" align="flex-start flex-start" maxWidth="100%">
+            <Heading size={4} caps textColor="black">
+              Dashboard
+            </Heading>
+            <Image src={images.sonataAdminDashboard.replace("/", "")} width="95%"/>
+          </Slide>
+          <Slide bgColor="primary" textColor="black" align="flex-start flex-start" maxWidth="100%">
+            <Heading size={4} caps textColor="black">
+              Vue Liste
+            </Heading>
+            <Image src={images.sonataAdminList.replace("/", "")} width="95%"/>
+          </Slide>
+          <Slide bgColor="primary" textColor="black" align="flex-start flex-start" maxWidth="100%">
+            <Heading size={4} caps textColor="black">
+              Vue détaillée
+            </Heading>
+            <Image src={images.sonataAdminShow.replace("/", "")} width="95%"/>
+          </Slide>
+          <Slide bgColor="primary" textColor="black" align="flex-start flex-start" maxWidth="100%">
+            <Heading size={4} caps textColor="black">
+              Création / Édition
+            </Heading>
+            <Image src={images.sonataAdminEdit.replace("/", "")} width="95%"/>
+          </Slide>
+          <Slide bgColor="primary" textColor="black">
+            <Heading size={1} caps textColor="black">
+              Mais aussi
+            </Heading>
+            <List>
+              <ListItem>Une recherche</ListItem>
+              <ListItem>Des "batch actions"</ListItem>
+              <ListItem>De l'autocomplétion</ListItem>
+              <ListItem>La gestion des médias (avec SonataMediaBundle)</ListItem>
+              <ListItem>Des types de champ spéciaux (datetime, wysiwyg...)</ListItem>
+              <ListItem>Des tris et filtres poussés</ListItem>
+              <ListItem>Une vue mosaïque</ListItem>
+              <ListItem>...</ListItem>
+            </List>
+          </Slide>
+          <Slide bgColor="primary" textColor="black">
+            <Heading size={1} caps textColor="black">
+              Sous le capot
+            </Heading>
+            <List>
+              <ListItem>Un CRUDController utilisé par toutes les entités</ListItem>
+              <ListItem>Un template par vue (list, show, create, edit)</ListItem>
+              <ListItem>Une classe d'admin à ajouter par entité</ListItem>
+              <ListItem>Quelques lignes de config yaml à ajouter</ListItem>
+            </List>
+          </Slide>
           <Slide bgColor="white" textColor="black">
             <Heading caps fit textColor="primary">
               Sonata Admin Bundle, c'est 👍 !
@@ -104,55 +154,82 @@ export default class Presentation extends React.Component {
               <ListItem>S'adapte à tous les ORMs / BDDs</ListItem>
               <ListItem>Gère les relations complexes entre objets</ListItem>
               <ListItem>Gère les rôles / droits / ACLs</ListItem>
-              <ListItem>Dashboard + CRUD pour chaque entité</ListItem>
-              <ListItem>Et en plus c'est joli™ !</ListItem>
+              <ListItem>Et en plus c'est joli !</ListItem>
             </List>
             <Image width="100%" src={images.magic.replace('/', '')}/>
           </Slide>
           <Slide bgColor="white" textColor="black">
             <Heading caps textColor="primary">
-              Quelques fonctionnalités méconnues
+              Quelques fonctionnalités avancées
             </Heading>
           </Slide>
-          <Slide bgColor="white" textColor="black">
+          <Slide bgColor="white" textColor="black" align="flex-start flex-start" maxWidth="100%">
             <Heading caps fit textColor="primary">
               Activer / désactiver finement les routes
             </Heading>
             <CodePane
+              textSize="1.2rem"
               lang="php"
               source={require("raw!../assets/code/routes.example")}
               margin="20px auto"
             />
           </Slide>
-          <Slide bgColor="white" textColor="black">
+          <Slide bgColor="white" textColor="black" align="flex-start flex-start" maxWidth="100%">
             <Heading caps fit textColor="primary">
-              Ajouter des actions personnalisées 1/2
+              Activer / désactiver finement les routes - Rendu
+            </Heading>
+            <Image src={images.routesPreview1.replace("/", "")} width="55%"/>
+            <Image src={images.routesPreview2.replace("/", "")} width="50%" style={{ marginTop: "30px" }}/>
+          </Slide>
+          <Slide bgColor="white" textColor="black" align="flex-start flex-start" maxWidth="100%">
+            <Heading caps fit textColor="primary">
+              Actions personnalisées - Controller
             </Heading>
             <CodePane
+              textSize="1.1rem"
               lang="php"
               source={require("raw!../assets/code/custom-action_controller.example")}
               margin="20px auto"
             />
+          </Slide>
+          <Slide bgColor="white" textColor="black" align="flex-start flex-start" maxWidth="100%">
+            <Heading caps fit textColor="primary">
+              Actions personnalisées - Déclaration
+            </Heading>
             <CodePane
+              textSize="1.2rem"
               lang="yaml"
               source={require("raw!../assets/code/custom-action_declaration.example")}
               margin="20px auto"
             />
           </Slide>
-          <Slide bgColor="white" textColor="black">
+          <Slide bgColor="white" textColor="black" align="flex-start flex-start" maxWidth="100%">
             <Heading caps fit textColor="primary">
-              Ajouter des actions personnalisées 2/2
+              Actions personnalisées - Template
             </Heading>
             <CodePane
+              textSize="1.2rem"
               lang="twig"
               source={require("raw!../assets/code/custom-action_button.example")}
               margin="20px auto"
             />
+          </Slide>
+          <Slide bgColor="white" textColor="black" align="flex-start flex-start" maxWidth="100%">
+            <Heading caps fit textColor="primary">
+              Actions personnalisées - Classe Admin
+            </Heading>
             <CodePane
+              textSize="0.8rem"
               lang="php"
               source={require("raw!../assets/code/custom-action_admin.example")}
               margin="20px auto"
             />
+          </Slide>
+          <Slide bgColor="white" textColor="black" maxWidth="100%" align="flex-start flex-start">
+            <Heading caps fit textColor="primary">
+              Actions personnalisées - Rendu
+            </Heading>
+            <Image src={images.customActionPreview.replace("/", "")} width="100%"/>
           </Slide>
           <Slide bgColor="black" textColor="white">
             <Heading caps fit textColor="primary">
@@ -223,7 +300,7 @@ export default class Presentation extends React.Component {
               </div>
             </Appear>
           </Slide>
-          <Slide bgColor="black">
+          <Slide bgColor="black" maxWidth="100%">
             <Heading caps fits size={2} textColor="primary" style={{ marginBottom: "50px" }}>
               Et c'est frustrant...
             </Heading>
@@ -247,11 +324,11 @@ export default class Presentation extends React.Component {
               Les alternatives
             </Heading>
           </Slide>
-          <Slide bgColor="tertiary">
+          <Slide bgColor="tertiary" align="flex-start flex-start">
             <Heading caps fit size={1} textColor="primary">
-              Meet JoliCampus!
+              Meet JoliCampus <Image height="1em" style={{ margin: "0" }} src={images.joliCampusLogo.replace('/', '')}/>
             </Heading>
-            <Image width="100%" src={images.joliCampus.replace('/', '')}/>
+            <Image src={images.joliCampus.replace('/', '')} style={{ marginTop: "60px" }} width="95%"/>
           </Slide>
           <Slide bgColor="secondary" textColor="primary">
             <Heading caps fit>
@@ -325,17 +402,15 @@ export default class Presentation extends React.Component {
             </Heading>
             <Image width="90%" src={images.fromScratch.replace("/", "")}/>
           </Slide>
-          <Slide bgColor="tertiary" align="center flex-start">
+          <Slide bgColor="tertiary" align="flex-start flex-start">
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
               La solution hybride
             </Heading>
-            <List>
-              <ListItem>Possibilités d'extension quasi infinies</ListItem>
-              <ListItem>Étendre Sonata Admin Bundle seulement là où c'est nécessaire</ListItem>
-              <ListItem>Réutiliser les APIs et le code métier existants</ListItem>
-              <ListItem>Twig, React, Angular...</ListItem>
-            </List>
+            <Text textColor="black" style={{ marginTop: "50px" }}>
+              Étendre Sonata Admin Bundle seulement là où c'est nécessaire
+            </Text>
             <CodePane
+              textSize="1.2rem"
               lang="php"
               source={require("raw!../assets/code/hybrid.example")}
               margin="20px auto"
@@ -359,15 +434,21 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide bgColor="white" textColor="black">
             <Heading size={1} caps fit textColor="primary">
-              Contribuez !
+              Contribuez
             </Heading>
-            <List>
-              <ListItem>Reportez les bugs</ListItem>
-              <ListItem>Écrivez de la doc</ListItem>
-              <ListItem>Faites des PRs</ListItem>
-            </List>
-            <Heading size={4} caps fit textColor="primary">
-              Bref, faites vivre le projet !
+            <Layout style={{ marginTop: "50px", marginBottom: "50px" }}>
+              <Fill>
+                <svg width="256" height="256" viewBox="0 0 14 16" version="1.1" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+              </Fill>
+              <Fill>
+                <svg width="256" height="256" viewBox="0 0 12 16" version="1.1" aria-hidden="true"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+              </Fill>
+              <Fill>
+                <svg width="256" height="256" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+              </Fill>
+            </Layout>
+            <Heading size={4} caps fit textColor="black">
+              Faites vivre le projet !
             </Heading>
           </Slide>
           <Slide bgColor="white">

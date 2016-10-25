@@ -1,10 +1,14 @@
 # src/MyBundle/Resources/config/admin.yml
-
 services:
     app.admin.votable_entity:
         class: MyBundle\Admin\VotableEntityAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm, group: Demo, label: "Votable entity" }
+            - {
+                name: sonata.admin,
+                manager_type: orm,
+                group: Demo,
+                label: "Votable entity"
+              }
         arguments:
             - null
             - MyBundle\Entity\VotableEntity
