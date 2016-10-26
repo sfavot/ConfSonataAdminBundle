@@ -338,16 +338,48 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide bgColor="secondary" textColor="primary">
             <Heading caps fit>
-              ng-admin
+              Les plus
             </Heading>
-            <Text><Link textColor="primary">https://github.com/marmelab/ng-admin</Link></Text>
-            <Text><Link textColor="primary">https://github.com/marmelab/NgAdminGeneratorBundle</Link></Text>
+            <List>
+              <ListItem>Ultra rapide à mettre en place</ListItem>
+              <ListItem>Interface agréable et facilement personnalisable</ListItem>
+              <ListItem>Recherche, tri et pagination</ListItem>
+              <ListItem>Templates facilement extensibles</ListItem>
+              <ListItem>Documentation claire et exhaustive</ListItem>
+            </List>
+          </Slide>
+          <Slide bgColor="secondary" textColor="primary">
+            <Heading caps fit>
+              Les moins
+            </Heading>
+            <List>
+              <ListItem>Pas de dashboard</ListItem>
+              <ListItem>Pas de filtres</ListItem>
+              <ListItem>Recherche peu poussée (ne fonctionne pas sur certains champs)</ListItem>
+              <ListItem>Pas de gestion des médias</ListItem>
+            </List>
           </Slide>
           <Slide bgColor="secondary" textColor="primary">
             <Heading caps fit>
               admin-on-rest
             </Heading>
             <Text><Link textColor="primary">https://github.com/marmelab/admin-on-rest</Link></Text>
+          </Slide>
+          <Slide bgColor="secondary" textColor="primary">
+            <Heading caps fit>
+              Les plus
+            </Heading>
+            <List>
+              <ListItem></ListItem>
+            </List>
+          </Slide>
+          <Slide bgColor="secondary" textColor="primary">
+            <Heading caps fit>
+              Les moins
+            </Heading>
+            <List>
+              <ListItem>Nécessite une API REST</ListItem>
+            </List>
           </Slide>
           <Slide bgColor="tertiary" align="center flex-start">
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
