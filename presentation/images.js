@@ -21,8 +21,6 @@ const images = {
   rage6: require("../assets/slack/rage/rage-6.png"),
   rage7: require("../assets/slack/rage/rage-7.png"),
   rage8: require("../assets/slack/rage/rage-8.png"),
-  joliCampusLogo: require("../assets/jolicampus-logo.png"),
-  joliCampus: require("../assets/jolicampus.png"),
   sonataAdminDashboard: require("../assets/sonata-dashboard.png"),
   sonataAdminList: require("../assets/sonata-list.png"),
   sonataAdminEdit: require("../assets/sonata-edit.png"),
@@ -30,6 +28,7 @@ const images = {
   routesPreview1: require("../assets/routes-preview-1.png"),
   routesPreview2: require("../assets/routes-preview-2.png"),
   customActionPreview: require("../assets/custom-action-preview.png"),
+  easyAdminJolicampus: require("../assets/easy-admin-jolicampus.png"),
 };
 
 export default images;

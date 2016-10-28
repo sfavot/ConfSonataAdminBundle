@@ -50,7 +50,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
-        <Deck transition={["slide"]} transitionDuration={500} progress="bar">
+        <Deck transition={["slide"]} transitionDuration={500} progress="number">
           <Slide bgColor="primary">
             <Heading size={1} fit caps lineHeight={1} textColor="black">
               Peut-on s'affranchir de
@@ -324,62 +324,41 @@ export default class Presentation extends React.Component {
               Les alternatives
             </Heading>
           </Slide>
-          <Slide bgColor="tertiary" align="flex-start flex-start">
-            <Heading caps fit size={1} textColor="primary">
-              Meet JoliCampus <Image height="1em" style={{ margin: "0" }} src={images.joliCampusLogo.replace('/', '')}/>
-            </Heading>
-            <Image src={images.joliCampus.replace('/', '')} style={{ marginTop: "60px" }} width="95%"/>
-          </Slide>
-          <Slide bgColor="secondary" textColor="primary">
-            <Heading caps fit>
+          <Slide bgColor="secondary" textColor="primary" maxWidth="100%" align="flex-start flex-start">
+            <Heading caps>
               Easy Admin Bundle
             </Heading>
             <Text><Link textColor="primary">https://github.com/javiereguiluz/EasyAdminBundle</Link></Text>
+            <Image src={images.easyAdminJolicampus.replace('/', '')} style={{ marginTop: "30px"}} width="95%"/>
           </Slide>
           <Slide bgColor="secondary" textColor="primary">
-            <Heading caps fit>
+            <Heading caps>
               Les plus
             </Heading>
             <List>
               <ListItem>Ultra rapide à mettre en place</ListItem>
               <ListItem>Interface agréable et facilement personnalisable</ListItem>
+              <ListItem>Filtres DQL (depuis une semaine !)</ListItem>
               <ListItem>Recherche, tri et pagination</ListItem>
               <ListItem>Templates facilement extensibles</ListItem>
               <ListItem>Documentation claire et exhaustive</ListItem>
             </List>
           </Slide>
           <Slide bgColor="secondary" textColor="primary">
-            <Heading caps fit>
+            <Heading caps>
               Les moins
             </Heading>
             <List>
               <ListItem>Pas de dashboard</ListItem>
-              <ListItem>Pas de filtres</ListItem>
-              <ListItem>Recherche peu poussée (ne fonctionne pas sur certains champs)</ListItem>
               <ListItem>Pas de gestion des médias</ListItem>
+              <ListItem>Doctrine uniquement</ListItem>
+              <ListItem>Pas de formulaires imbriqués</ListItem>
             </List>
           </Slide>
           <Slide bgColor="secondary" textColor="primary">
             <Heading caps fit>
-              admin-on-rest
+              Les alternatives non PHP
             </Heading>
-            <Text><Link textColor="primary">https://github.com/marmelab/admin-on-rest</Link></Text>
-          </Slide>
-          <Slide bgColor="secondary" textColor="primary">
-            <Heading caps fit>
-              Les plus
-            </Heading>
-            <List>
-              <ListItem></ListItem>
-            </List>
-          </Slide>
-          <Slide bgColor="secondary" textColor="primary">
-            <Heading caps fit>
-              Les moins
-            </Heading>
-            <List>
-              <ListItem>Nécessite une API REST</ListItem>
-            </List>
           </Slide>
           <Slide bgColor="tertiary" align="center flex-start">
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
