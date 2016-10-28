@@ -35,7 +35,7 @@ import images from './images';
 preloader(images);
 
 const joliColor = "#F7D325";
-const retroFriendlyColor = "#0BCCA3";
+const retroFriendlyColor = "#aadaca";
 
 const mainColor = joliColor;
 
@@ -50,7 +50,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
-        <Deck transition={["slide"]} transitionDuration={500} progress="number">
+        <Deck transition={["slide"]} transitionDuration={500} progress="bar">
           <Slide bgColor="primary">
             <Heading size={1} fit caps lineHeight={1} textColor="black">
               Peut-on s'affranchir de
@@ -344,6 +344,17 @@ export default class Presentation extends React.Component {
               <ListItem>Documentation claire et exhaustive</ListItem>
             </List>
           </Slide>
+          <Slide bgColor="secondary" textColor="primary" align="flex-start flex-start" maxWidth="100%">
+            <Heading caps textColor="primary">
+              VRAIMENT rapide
+            </Heading>
+            <CodePane
+              textSize="1.7rem"
+              lang="php"
+              source={require("raw!../assets/code/easy-admin.example")}
+              margin="20px auto"
+            />
+          </Slide>
           <Slide bgColor="secondary" textColor="primary">
             <Heading caps>
               Les moins
@@ -354,11 +365,6 @@ export default class Presentation extends React.Component {
               <ListItem>Doctrine uniquement</ListItem>
               <ListItem>Pas de formulaires imbriqués</ListItem>
             </List>
-          </Slide>
-          <Slide bgColor="secondary" textColor="primary">
-            <Heading caps fit>
-              Les alternatives non PHP
-            </Heading>
           </Slide>
           <Slide bgColor="tertiary" align="center flex-start">
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">

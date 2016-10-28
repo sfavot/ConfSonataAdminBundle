@@ -1,0 +1,8 @@
+easy_admin:
+  site_name: 'Joli Campus'
+  design:
+    brand_color: '#1ABC9C'
+  entities:
+    Event:
+      class: 'Joli\Model\Entity\Event'
+      label: 'Événement'
